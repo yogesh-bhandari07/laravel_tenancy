@@ -1,3 +1,81 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+:root {
+    --oxford-blue: #334153;
+    --iron: #d1d8d9;
+    --hoki: #67869f;
+    --pine-cone: #62544b;
+    --beaver: #8d7456;
+    --nepal: #91abbc;
+    --natural-gray: #938c88;
+    --mongoose: #baa88b;
+    --hit-gray: #a8b1b9;
+    --fountain-blue: #48a4b8;
+    --background: #F4F6FF;
+    --heading: #33372C;
+    --text: #3C3D37;
+    --dark-text: #F4F6FF;
+    --dark-heading: #d1d8d9;
+}
+
+/* Apply background color to the body */
+body {
+    background-color: var(--background);
+    color: var(--text);
+    font-family: Arial, sans-serif;
+    /* Set a default font */
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--heading);
+}
+
+/* Links */
+a {
+    color: var(--fountain-blue);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--hoki);
+}
+
+/* Button styles */
+.btn {
+    background-color: var(--oxford-blue);
+    color: var(--dark-text);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--hoki);
+}
+
+/* Text color variations */
+.text-heading {
+    color: var(--heading);
+}
+
+.text-muted {
+    color: var(--natural-gray);
+}
+
+/* Use for darker text elements */
+.text-dark {
+    color: var(--dark-text);
+}
+
+/* Use for light backgrounds with dark text */
+.bg-light {
+    background-color: var(--iron);
+}
+
+/* Add more utility classes as needed */

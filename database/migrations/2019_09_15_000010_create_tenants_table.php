@@ -19,8 +19,11 @@ class CreateTenantsTable extends Migration
             $table->string('id')->primary();
 
             $table->string('name');
+            $table->string('email');
+            $table->string('password');
             $table->boolean('active')->default(true);
             $table->string('logo')->nullable();
+
 
             $table->timestamps();
 
